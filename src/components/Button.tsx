@@ -36,6 +36,7 @@ const ButtonBase: FC<ButtonAllProps> = memo(({
             <a
                 href={href}
                 target={target}
+                rel="noopener noreferrer"
                 className={`btn ${baseClass} ` + classes}
             >
                 {label}

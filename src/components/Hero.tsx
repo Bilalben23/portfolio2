@@ -11,7 +11,7 @@ export default function Hero() {
                                 src="/images/avatar-1.jpg" alt="Bilal Benyoussef portrait"
                                 width={40}
                                 height={40}
-                                className="object-cover size-full"
+                                className="img-cover"
                             />
                         </figure>
 

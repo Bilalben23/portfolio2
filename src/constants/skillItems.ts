@@ -1,9 +1,8 @@
-type skillItem = {
+export type skillItem = {
     imgSrc: string;
     label: string;
     desc: string;
 }
-
 
 export const skillItems: skillItem[] = [
     {
@@ -76,5 +75,4 @@ export const skillItems: skillItem[] = [
         label: 'GitHub',
         desc: 'Hosts projects & manages code'
     }
-
 ];

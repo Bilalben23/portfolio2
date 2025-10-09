@@ -1,14 +1,12 @@
 import { memo, type FC } from 'react'
+import type { skillItem } from '../constants/skillItems';
 
 
-type SkillCardProps = {
-    imgSrc: string;
-    label: string;
-    desc: string;
-    classes: string;
+type SkillCardProps = skillItem & {
+    classes?: string;
 }
 
-const SkillCard: FC<SkillCardProps> = ({ imgSrc, label, desc, classes }) => {
+const SkillCard: FC<SkillCardProps> = ({ imgSrc, label, desc, classes = "" }) => {
     return (
         <div className={`flex items-center gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors duration-300 group` + classes}>
             <figure className='bg-zinc-700/50 rounded-lg overflow-hidden size-12 p-2 group-hover:bg-zinc-900 duration-300 transition-colors'>
