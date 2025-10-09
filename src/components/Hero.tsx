@@ -2,7 +2,7 @@ import { ButtonPrimary, ButtonOutline } from "./Button";
 
 export default function Hero() {
     return (
-        <section id='home' className='pt-28 lg:pt-36'>
+        <section id='home' className='section'>
             <div className='container flex flex-col items-center px-4 mx-auto lg:flex-row lg:px-8 xl:max-w-6xl lg:gap-10'>
                 <div className=''>
                     <div className="flex items-center gap-3">
