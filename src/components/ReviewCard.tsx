@@ -36,7 +36,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
             <p className="mb-6 text-zinc-400">{content}</p>
 
             {/* Reviewer Info */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-auto">
                 <div className="flex items-center gap-3">
                     <a
                         href={profileLink}

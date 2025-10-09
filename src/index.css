@@ -22,11 +22,11 @@
 }
 
 .navbar.active {
-    @apply opacity-100 scale-100 blur-none visible;
+    @apply visible scale-100 opacity-100 blur-none;
 }
 
 .nav-link {
-    @apply flex flex-col justify-center py-2 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors;
+    @apply flex flex-col justify-center px-4 py-2 text-sm font-medium tracking-wide transition-colors text-zinc-50/50 hover:text-zinc-50;
 }
 
 .nav-link.active {
@@ -34,7 +34,7 @@
 }
 
 .navbar .active-box {
-    @apply absolute bg-zinc-50 rounded-lg -z-50 transition-all duration-500;
+    @apply absolute transition-all duration-500 rounded-lg bg-zinc-50 -z-50;
 }
 
 .btn .material-symbols-rounded {
@@ -45,13 +45,10 @@
     @apply pr-3;
 }
 
-.title-1 {
-    @apply text-[22px] font-normal;
-}
 
 @layer utilities {
     .btn {
-        @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-colors cursor-pointer duration-300;
+        @apply flex items-center gap-2 px-4 text-sm font-medium transition-colors duration-300 cursor-pointer h-9 rounded-xl ring-1 ring-zinc-50/5 ring-inset;
     }
 
     .btn-primary {
@@ -72,7 +69,11 @@
     }
 
     .headline-2 {
-        @apply text-3xl font-semibold lg:text-4xl lg:leading-tight;
+        @apply text-3xl font-semibold lg:text-4xl bg-linear-0 lg:leading-tight from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent;
+    }
+
+    .title-1 {
+        @apply text-[22px] font-normal;
     }
 
     .img-box {
@@ -85,5 +86,17 @@
 
     .section {
         @apply pt-20 lg:pt-32;
+    }
+
+    .label {
+        @apply block text-zinc-200 text-sm font-normal mb-2
+    }
+
+    .text-field {
+        @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+    }
+
+    .text-field::placeholder {
+        @apply text-zinc-400
     }
 }
