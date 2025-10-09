@@ -9,7 +9,7 @@ type SkillCardProps = skillItem & {
 const SkillCard: FC<SkillCardProps> = ({ imgSrc, label, desc, classes = "" }) => {
     return (
         <div className={`flex items-center gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors duration-300 group` + classes}>
-            <figure className='bg-zinc-700/50 rounded-lg overflow-hidden size-12 p-2 group-hover:bg-zinc-900 duration-300 transition-colors'>
+            <figure className='p-2 overflow-hidden transition-colors duration-300 rounded-lg bg-zinc-700/50 size-12 group-hover:bg-zinc-900'>
                 <img
                     src={imgSrc}
                     alt={label}
@@ -21,7 +21,7 @@ const SkillCard: FC<SkillCardProps> = ({ imgSrc, label, desc, classes = "" }) =>
 
             <div className=''>
                 <p>{label}</p>
-                <p className='text-zinc-400 text-sm'>{desc}</p>
+                <p className='text-sm text-zinc-400'>{desc}</p>
             </div>
         </div>
     )

@@ -10,6 +10,6 @@ export const aboutItems: AboutItem[] = [
     },
     {
         label: 'Years of experience',
-        number: 10
+        number: 3
     }
 ];

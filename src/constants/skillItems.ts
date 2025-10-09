@@ -36,6 +36,11 @@ export const skillItems: skillItem[] = [
         desc: 'Creates dynamic UIs'
     },
     {
+        imgSrc: '/images/redux.svg',
+        label: 'Redux Toolkit',
+        desc: 'State management'
+    },
+    {
         imgSrc: '/images/tailwindcss.svg',
         label: 'TailwindCSS',
         desc: 'Speeds up styling'
@@ -74,5 +79,10 @@ export const skillItems: skillItem[] = [
         imgSrc: '/images/github.svg',
         label: 'GitHub',
         desc: 'Hosts projects & manages code'
+    },
+    {
+        imgSrc: '/images/storybook.svg',
+        label: 'Storybook',
+        desc: 'Develops and tests UI components'
     }
 ];

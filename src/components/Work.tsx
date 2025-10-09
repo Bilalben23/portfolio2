@@ -5,14 +5,20 @@ export default function Work() {
     return (
         <section id="work" className="section">
             <div className="container mx-auto">
-                <h4 className="mb-8 heading-2">My portfolio highlights</h4>
+                <h4 className="mb-6 heading-2">
+                    My portfolio highlights
+                </h4>
+                <p className="max-w-2xl mb-10 text-zinc-400">
+                    A selection of my projects built with modern web technologies. Live demos, GitHub repos, and LinkedIn posts included.
+                </p>
 
-                <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-                    {works.map((work, i) => (<ProjectCard
-                        key={i}
-                        {...work}
-                    />
-                    ))}
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {
+                        works.map((work, i) => <ProjectCard
+                            key={i}
+                            {...work}
+                        />)
+                    }
                 </div>
             </div>
         </section>
