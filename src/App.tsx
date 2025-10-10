@@ -6,10 +6,13 @@ import Hero from './components/Hero';
 import Review from './components/Review';
 import Skill from './components/Skill';
 import Work from './components/Work';
+import { ReactLenis } from 'lenis/react';
+
 
 export default function App() {
   return (
     <>
+      <ReactLenis root />
       <Header />
       <main>
         <Hero />
