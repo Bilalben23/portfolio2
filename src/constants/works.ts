@@ -1,3 +1,11 @@
+import project1 from "../assets/images/project-1.jpg";
+import project2 from "../assets/images/project-2.jpg";
+import project3 from "../assets/images/project-3.jpg";
+import project4 from "../assets/images/project-4.jpg";
+import project5 from "../assets/images/project-5.jpg";
+import project6 from "../assets/images/project-6.jpg";
+
+
 export type Work = {
     imgSrc: string;
     title: string;
@@ -5,12 +13,12 @@ export type Work = {
     technologies: string[];
     demoLink?: string;
     githubLink?: string;
-    linkedinPost?: string;
+    linkedinPost?: string
 }
 
 export const works: Work[] = [
     {
-        imgSrc: '/images/project-1.jpg',
+        imgSrc: project1,
         title: 'Full stack music app',
         description: 'A full-stack music app with playlists and search functionality.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'API'],
@@ -19,7 +27,7 @@ export const works: Work[] = [
         linkedinPost: 'https://www.linkedin.com/posts/...'
     },
     {
-        imgSrc: '/images/project-2.jpg',
+        imgSrc: project2,
         title: 'Free stock photo app',
         description: 'A SPA for browsing and downloading free stock photos.',
         technologies: ['React', 'API', 'SPA'],
@@ -28,7 +36,7 @@ export const works: Work[] = [
         linkedinPost: 'https://www.linkedin.com/posts/...'
     },
     {
-        imgSrc: '/images/project-3.jpg',
+        imgSrc: project3,
         title: 'Recipe app',
         description: 'An app for discovering and saving recipes.',
         technologies: ['React', 'API', 'Development'],
@@ -36,7 +44,7 @@ export const works: Work[] = [
         githubLink: 'https://github.com/yourusername/recipe-app'
     },
     {
-        imgSrc: '/images/project-4.jpg',
+        imgSrc: project4,
         title: 'Real estate website',
         description: 'A modern website for showcasing real estate properties.',
         technologies: ['HTML', 'CSS', 'JavaScript', 'Web-design', 'Development'],
@@ -44,7 +52,7 @@ export const works: Work[] = [
         githubLink: 'https://github.com/codewithsadee-org/wealthome'
     },
     {
-        imgSrc: '/images/project-5.jpg',
+        imgSrc: project5,
         title: 'eCommerce website',
         description: 'A fully functional online store with product catalog and checkout.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'eCommerce'],
@@ -52,7 +60,7 @@ export const works: Work[] = [
         githubLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
     },
     {
-        imgSrc: '/images/project-6.jpg',
+        imgSrc: project6,
         title: 'vCard Personal portfolio',
         description: 'A personal vCard portfolio website to showcase projects and skills.',
         technologies: ['React', 'TailwindCSS', 'Web-design', 'Development'],

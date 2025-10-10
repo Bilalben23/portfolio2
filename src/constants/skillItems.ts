@@ -1,88 +1,106 @@
+import figma from '../assets/icons/figma.svg';
+import html5 from '../assets/icons/html5.svg';
+import css3 from '../assets/icons/css3.svg';
+import javascript from '../assets/icons/javascript.svg';
+import typescript from '../assets/icons/typescript.svg';
+import react from '../assets/icons/react.svg';
+import redux from '../assets/icons/redux.svg';
+import tailwindcss from '../assets/icons/tailwindcss.svg';
+import nodejs from '../assets/icons/nodejs.svg';
+import expressjs from '../assets/icons/expressjs.svg';
+import mongodb from '../assets/icons/mongodb.svg';
+import sql from '../assets/icons/sql.svg';
+import redis from '../assets/icons/redis.svg';
+import git from '../assets/icons/git.svg';
+import github from '../assets/icons/github.svg';
+import storybook from '../assets/icons/storybook.svg';
+
+
 export type skillItem = {
     imgSrc: string;
     label: string;
     desc: string;
-}
+};
 
 export const skillItems: skillItem[] = [
     {
-        imgSrc: '/images/figma.svg',
+        imgSrc: figma,
         label: 'Figma',
-        desc: 'Designs interfaces'
+        desc: 'Designs interfaces',
     },
     {
-        imgSrc: '/images/html5.svg',
+        imgSrc: html5,
         label: 'HTML5',
-        desc: 'Structures web pages'
+        desc: 'Structures web pages',
     },
     {
-        imgSrc: '/images/css3.svg',
+        imgSrc: css3,
         label: 'CSS3',
-        desc: 'Styles web pages'
+        desc: 'Styles web pages',
     },
     {
-        imgSrc: '/images/javascript.svg',
+        imgSrc: javascript,
         label: 'JavaScript',
-        desc: 'Adds interactivity'
+        desc: 'Adds interactivity',
     },
     {
-        imgSrc: "/images/typescript.svg",
-        label: "TypeScript",
-        desc: "Typed, safer code"
+        imgSrc: typescript,
+        label: 'TypeScript',
+        desc: 'Typed, safer code',
     },
     {
-        imgSrc: '/images/react.svg',
+        imgSrc: react,
         label: 'React',
-        desc: 'Creates dynamic UIs'
+        desc: 'Creates dynamic UIs',
     },
     {
-        imgSrc: '/images/redux.svg',
+        imgSrc: redux,
         label: 'Redux Toolkit',
-        desc: 'State management'
+        desc: 'State management',
     },
     {
-        imgSrc: '/images/tailwindcss.svg',
+        imgSrc: tailwindcss,
         label: 'TailwindCSS',
-        desc: 'Speeds up styling'
+        desc: 'Speeds up styling',
     },
     {
-        imgSrc: '/images/nodejs.svg',
+        imgSrc: nodejs,
         label: 'NodeJS',
-        desc: 'Runs backend logic'
+        desc: 'Runs backend logic',
     },
     {
-        imgSrc: '/images/expressjs.svg',
+        imgSrc: expressjs,
         label: 'ExpressJS',
-        desc: 'Manages server APIs'
+        desc: 'Manages server APIs',
     },
     {
-        imgSrc: '/images/mongodb.svg',
+        imgSrc: mongodb,
         label: 'MongoDB',
-        desc: 'Stores flexible data'
+        desc: 'Stores flexible data',
     },
     {
-        imgSrc: "/images/sql.svg",
-        label: "SQL",
-        desc: "Manages relational data"
+        imgSrc: sql,
+        label: 'SQL',
+        desc: 'Manages relational data',
     },
     {
-        imgSrc: '/images/redis.svg',
+        imgSrc: redis,
         label: 'Redis',
-        desc: 'In-memory caching'
+        desc: 'In-memory caching',
     },
     {
-        imgSrc: "/images/git.svg",
-        label: "Git",
-        desc: "Version Control"
+        imgSrc: git,
+        label: 'Git',
+        desc: 'Version control',
     },
     {
-        imgSrc: '/images/github.svg',
+        imgSrc: github,
         label: 'GitHub',
-        desc: 'Hosts projects & manages code'
+        desc: 'Hosts projects & manages code',
     },
     {
-        imgSrc: '/images/storybook.svg',
+        imgSrc: storybook,
         label: 'Storybook',
-        desc: 'Develops and tests UI components'
-    }
+        desc: 'Develops and tests UI components',
+    },
 ];

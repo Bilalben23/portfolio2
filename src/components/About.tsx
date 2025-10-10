@@ -1,4 +1,5 @@
 import { aboutItems } from '../constants/aboutItems';
+import logo from "../assets/icons/logo.svg";
 
 export default function About() {
 
@@ -21,7 +22,7 @@ export default function About() {
                         ))}
 
                         <img
-                            src="/images/logo.svg"
+                            src={logo}
                             alt="Logo"
                             width={30}
                             height={30}

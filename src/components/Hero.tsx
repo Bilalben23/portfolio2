@@ -1,4 +1,6 @@
 import { ButtonPrimary, ButtonOutline } from "./Button";
+import heroBanner from "../assets/images/hero-banner.png";
+import avatar from "../assets/images/avatar-1.jpg";
 
 export default function Hero() {
     return (
@@ -8,7 +10,8 @@ export default function Hero() {
                     <div className="flex items-center gap-3">
                         <figure className='rounded-lg img-box size-9'>
                             <img
-                                src="/images/avatar-1.jpg" alt="Bilal Benyoussef portrait"
+                                src={avatar}
+                                alt="Bilal Benyoussef portrait"
                                 width={40}
                                 height={40}
                                 className="img-cover"
@@ -44,7 +47,7 @@ export default function Hero() {
                     <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% overflow-hidden via-sky-400 to-65% rounded-[60px]
                     ">
                         <img
-                            src="/images/hero-banner.png"
+                            src={heroBanner}
                             alt="Bilal Benyoussef"
                             width={656}
                             height={800}

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
+import logo from "../assets/icons/logo.svg";
+
 
 export default function Header() {
     const [navBar, setNavBar] = useState<boolean>(false);
@@ -16,7 +18,7 @@ export default function Header() {
                         className="logo"
                     >
                         <img
-                            src="/images/logo.svg"
+                            src={logo}
                             className="size-10"
                             alt="Bilal Benyoussef"
                         />
