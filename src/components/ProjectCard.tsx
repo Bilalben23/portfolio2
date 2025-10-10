@@ -19,7 +19,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
     classes = ""
 }) => {
     return (
-        <div className={"relative justify-between flex flex-col p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset shadow-zinc-900 shadow-lg hover:shadow-2xl ring-zinc-50/5 transition-all duration-300 overflow-hidden" + classes}>
+        <div className={"relative justify-between flex flex-col p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset shadow-zinc-900 shadow-lg hover:shadow-2xl ring-zinc-50/5 transition-all duration-300 overflow-hidden " + classes}>
 
             <div>
                 <figure className='relative mb-4 overflow-hidden rounded-lg img-box aspect-square'>

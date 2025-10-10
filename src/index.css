@@ -46,6 +46,7 @@
 }
 
 
+
 @layer utilities {
     .btn {
         @apply flex items-center gap-2 px-4 text-sm font-medium transition-colors duration-300 cursor-pointer h-9 rounded-xl ring-1 ring-zinc-50/5 ring-inset;
@@ -97,6 +98,10 @@
     }
 
     .text-field::placeholder {
-        @apply text-zinc-400
+        @apply text-zinc-400;
+    }
+
+    .reveal-up {
+        @apply translate-y-20 opacity-0;
     }
 }

@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section id='about' className='section'>
             <div className="container mx-auto">
-                <div className='bg-zinc-800/50 p-7 rounded-xl md:p-12'>
+                <div className='bg-zinc-800/50 p-7 rounded-xl md:p-12 reveal-up'>
                     <p className='text-zinc-300 md:text-xl mb-4 md:mb-8 max-w-3xl'>Welcome! I&apos;m Bilal, a professional web developer with a knack for crafting visually stunning and highly functional websites. Combining creativity and technical expertise. I transform your vision into digital masterpiece that excels in both appearance and performance.
                     </p>
 

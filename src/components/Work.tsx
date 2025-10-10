@@ -5,7 +5,7 @@ export default function Work() {
     return (
         <section id="work" className="section">
             <div className="container mx-auto">
-                <h3 className="mb-6 headline-2">
+                <h3 className="mb-6 headline-2 reveal-up">
                     My portfolio highlights
                 </h3>
                 <p className="max-w-2xl mb-10 text-zinc-400">
@@ -17,6 +17,7 @@ export default function Work() {
                         works.map((work, i) => <ProjectCard
                             key={i}
                             {...work}
+                            classes="reveal-up"
                         />)
                     }
                 </div>

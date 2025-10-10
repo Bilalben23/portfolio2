@@ -60,10 +60,10 @@ export default function Contact() {
             <Toaster richColors position="top-center" />
             <div className="container flex flex-col justify-between mx-auto md:items-stretch md:flex-row">
                 <div className="mb-12 md:flex-1 md:mb-0 md:flex md:flex-col">
-                    <h5 className="headline-2 lg:max-w-md">
+                    <h5 className="headline-2 lg:max-w-md reveal-up">
                         Contact me for collaboration
                     </h5>
-                    <p className="max-w-sm mt-3 mb-8 text-zinc-400 lg:max-w-md">
+                    <p className="max-w-sm mt-3 mb-8 text-zinc-400 lg:max-w-md reveal-up">
                         Reach out today to discuss your project needs and start collaborating on something amazing!
                     </p>
 
@@ -74,7 +74,7 @@ export default function Contact() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 key={idx}
-                                className="grid transition-all rounded-lg size-12 ring-zinc-50/5 ring-inset ring-2 hover:bg-zinc-50 place-items-center hover:text-zinc-950 active:bg-zinc-50/80"
+                                className="grid transition-all rounded-lg size-12 ring-zinc-50/5 ring-inset ring-2 hover:bg-zinc-50 place-items-center hover:text-zinc-950 active:bg-zinc-50/80 reveal-up"
                             >
                                 {icon}
                             </a>
@@ -87,13 +87,13 @@ export default function Contact() {
                         <div className="mb-4">
                             <label
                                 htmlFor="name"
-                                className="label">
+                                className="label reveal-up">
                                 Name
                             </label>
                             <input
                                 type="text"
                                 id="name"
-                                autoComplete="name"
+                                autoComplete="name reveal-up"
                                 required
                                 placeholder="Bilal Benyoussef"
                                 name="name"
@@ -106,13 +106,13 @@ export default function Contact() {
                         <div className="mb-4">
                             <label
                                 htmlFor="email"
-                                className="label">
+                                className="label reveal-up">
                                 Email
                             </label>
                             <input
                                 type="email"
                                 id="email"
-                                autoComplete="email"
+                                autoComplete="email reveal-up"
                                 required
                                 placeholder="bilal@example.com"
                                 name="email"
@@ -125,7 +125,7 @@ export default function Contact() {
                         <div className="mb-4 md:col-span-2">
                             <label
                                 htmlFor="message"
-                                className="label">
+                                className="label reveal-up">
                                 Message
                             </label>
                             <textarea
@@ -133,7 +133,7 @@ export default function Contact() {
                                 id="message"
                                 placeholder="Hi!"
                                 required
-                                className="resize-y text-field min-h-32 max-h-80"
+                                className="resize-y text-field min-h-32 max-h-80 reveal-up"
                                 onChange={handleChange}
                                 value={data.message}
                             >
@@ -149,7 +149,7 @@ export default function Contact() {
                             className="!hidden"
                         />
 
-                        <button type="submit" className="btn btn-primary [&]:max-w-full w-full disabled:bg-sky-950 disabled:pointer-events-none disabled:text-white justify-center" disabled={isSending}>
+                        <button type="submit" className="btn btn-primary [&]:max-w-full w-full disabled:bg-sky-950 disabled:pointer-events-none disabled:text-white justify-center reveal-up" disabled={isSending}>
                             {isSending ? "Submitting..." : "Submit"}
                         </button>
                     </div>
