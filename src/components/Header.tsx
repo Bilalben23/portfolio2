@@ -10,7 +10,7 @@ export default function Header() {
         <header className="fixed top-0 left-0 z-40 items-center w-full h-20 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
             <div className="flex items-center justify-between w-full max-w-screen-xl px-4 mx-auto mt-2 md:px-6">
 
-                <h1>
+                <div>
                     <a
                         href="/"
                         className="logo"
@@ -21,7 +21,7 @@ export default function Header() {
                             alt="Bilal Benyoussef"
                         />
                     </a>
-                </h1>
+                </div>
 
                 <div className="relative">
                     <button

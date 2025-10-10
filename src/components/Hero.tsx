@@ -22,9 +22,9 @@ export default function Hero() {
                             Available for work
                         </div>
                     </div>
-                    <h2 className='max-w-max bg-linear-0 text-5xl font-semibold mt-5 mb-8 lg:mb-10 leading-tight lg:text-[55px] lg:leading-16 from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent'>
+                    <h1 className='max-w-max bg-linear-0 text-5xl font-semibold mt-5 mb-8 lg:mb-10 leading-tight lg:text-[55px] lg:leading-16 from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent'>
                         Building Scalable Modern Websites for the future
-                    </h2>
+                    </h1>
 
                     <div className='flex items-center gap-3'>
                         <ButtonPrimary

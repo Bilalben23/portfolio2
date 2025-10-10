@@ -60,9 +60,9 @@ export default function Contact() {
             <Toaster richColors position="top-center" />
             <div className="container flex flex-col justify-between mx-auto md:items-stretch md:flex-row">
                 <div className="mb-12 md:flex-1 md:mb-0 md:flex md:flex-col">
-                    <h6 className="headline-2 lg:max-w-md">
+                    <h5 className="headline-2 lg:max-w-md">
                         Contact me for collaboration
-                    </h6>
+                    </h5>
                     <p className="max-w-sm mt-3 mb-8 text-zinc-400 lg:max-w-md">
                         Reach out today to discuss your project needs and start collaborating on something amazing!
                     </p>
