@@ -1,6 +1,6 @@
 import { sitemap, socials } from "../constants/footer";
 import { ButtonPrimary } from "./Button";
-import logo from "/images/logo.svg"
+import logo from "../assets/icons/logo.svg";
 
 export default function Footer() {
     return (

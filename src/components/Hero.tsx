@@ -1,6 +1,6 @@
 import { ButtonPrimary, ButtonOutline } from "./Button";
 import heroBanner from "../assets/images/hero-banner.png";
-import avatar from "../assets/images/avatar-1.jpg";
+import avatar from "../assets/images/avatar-1.webp";
 
 export default function Hero() {
     return (
@@ -25,10 +25,9 @@ export default function Hero() {
                             Available for work
                         </div>
                     </div>
-                    <h1 className='max-w-max bg-linear-0 text-5xl font-semibold mt-5 mb-8 lg:mb-10 leading-tight lg:text-[55px] lg:leading-16 from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent'>
-                        Building Scalable Modern Websites for the future
+                    <h1 className='max-w-max bg-linear-0 text-4xl font-semibold mt-5 mb-8 lg:mb-10 leading-tight lg:text-[50px] lg:leading-16 from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent'>
+                        A Full-Stack Developer building modern, fast, and scalable web apps.
                     </h1>
-
                     <div className='flex items-center gap-3'>
                         <ButtonPrimary
                             label="Download CV"
@@ -44,8 +43,7 @@ export default function Hero() {
                 </div>
 
                 <div className="hidden lg:block">
-                    <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% overflow-hidden via-sky-400 to-65% rounded-[60px]
-                    ">
+                    <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-sky-400 via-25% overflow-hidden via-sky-400 to-65% rounded-4xl">
                         <img
                             src={heroBanner}
                             alt="Bilal Benyoussef"

@@ -1,6 +1,6 @@
 import { memo, type FC } from 'react';
 import type { Work } from '../constants/works';
-import github from "/images/github.svg";
+import github from "../assets/icons/github.svg";
 
 
 type ProjectCardProps = Work & {
@@ -22,7 +22,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <div className={"relative justify-between flex flex-col p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset shadow-zinc-900 shadow-lg hover:shadow-2xl ring-zinc-50/5 transition-all duration-300 overflow-hidden " + classes}>
 
             <div>
-                <figure className='relative mb-4 overflow-hidden rounded-lg img-box aspect-square'>
+                <figure className='relative mb-2 overflow-hidden rounded-lg img-box aspect-square'>
                     <a href={demoLink}
                         target="_blank"
                         rel="noopener noreferrer"

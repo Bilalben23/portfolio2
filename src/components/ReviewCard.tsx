@@ -17,7 +17,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
     commentLink,
 }) => {
     return (
-        <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-zinc-800 p-5 flex-1 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px] shadow-lg hover:shadow-xl transition-shadow duration-300">
 
             {/* Ratings */}
             <div className="flex items-center gap-1 mb-3">
@@ -40,7 +40,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
                 <div className="flex items-center gap-3">
                     <a
                         href={profileLink}
-                        className="overflow-hidden rounded-full size-12"
+                        className="overflow-hidden rounded-full shrink-0 size-12"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -59,7 +59,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
                         >
                             {name}
                         </a>
-                        <p className="text-xs tracking-wider text-zinc-400">{role}</p>
+                        <p className="text-xs tracking-wider text-zinc-400 line-clamp-2">{role}</p>
                     </div>
                 </div>
 

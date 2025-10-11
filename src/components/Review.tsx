@@ -15,12 +15,14 @@ export default function Review() {
             scrollTrigger: {
                 trigger: ".scrub-slide",
                 scrub: true,
-                start: "-200% 80%",
+                start: "0% 80%",
                 end: "400% 80%"
             },
-            x: "-1000"
+            x: "-50"
         })
     })
+
+
     return (
         <section id='reviews' className='overflow-hidden section'>
             <div className='container mx-auto'>
@@ -29,14 +31,16 @@ export default function Review() {
                     Feedback from people who have seen my projects and work.
                 </p>
 
-                <div className='flex items-stretch gap-3 scrub-slide w-fit'>
-                    {
-                        reviews.map((review, idx) => <ReviewCard
-                            key={idx}
-                            {...review}
-                        />
-                        )
-                    }
+                <div className='p-2 overflow-x-auto scrollbar-thin' >
+                    <div className='flex items-stretch gap-3 scrub-slide'>
+                        {
+                            reviews.map((review, idx) => <ReviewCard
+                                key={idx}
+                                {...review}
+                            />
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </section>

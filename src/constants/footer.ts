@@ -29,27 +29,27 @@ export const sitemap: Sitemap[] = [
         label: 'Contact me',
         href: '#contact'
     }
-];
+] as const;
 
 export const socials: Social[] = [
     {
         label: 'GitHub',
-        href: 'https://www.github.com/codewithsadee-org'
+        href: 'https://github.com/Bilalben23'
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/codewithsadee'
+        href: 'https://www.linkedin.com/in/bilal-ben-youssef-b38a27251'
     },
     {
         label: 'Twitter X',
-        href: 'https://x.com/codewithsadee_'
+        href: 'https://x.com/BenyBilal31567'
     },
     {
         label: 'Instagram',
-        href: 'https://www.instagram.com/codewithsadee'
+        href: 'https://www.instagram.com/bial4220'
     },
     {
         label: 'CodePen',
-        href: 'https://codepen.io/codewithsadee'
+        href: 'https://codepen.io/Bilal2023'
     }
-];
+] as const;

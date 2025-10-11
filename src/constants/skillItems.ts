@@ -9,7 +9,7 @@ import tailwindcss from '../assets/icons/tailwindcss.svg';
 import nodejs from '../assets/icons/nodejs.svg';
 import expressjs from '../assets/icons/expressjs.svg';
 import mongodb from '../assets/icons/mongodb.svg';
-import sql from '../assets/icons/sql.svg';
+import mySQL from '../assets/icons/mysql.svg';
 import redis from '../assets/icons/redis.svg';
 import git from '../assets/icons/git.svg';
 import github from '../assets/icons/github.svg';
@@ -79,8 +79,8 @@ export const skillItems: skillItem[] = [
         desc: 'Stores flexible data',
     },
     {
-        imgSrc: sql,
-        label: 'SQL',
+        imgSrc: mySQL,
+        label: 'MySQL',
         desc: 'Manages relational data',
     },
     {
@@ -103,4 +103,4 @@ export const skillItems: skillItem[] = [
         label: 'Storybook',
         desc: 'Develops and tests UI components',
     },
-];
+] as const;

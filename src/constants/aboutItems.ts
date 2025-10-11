@@ -6,10 +6,10 @@ type AboutItem = {
 export const aboutItems: AboutItem[] = [
     {
         label: 'Project done',
-        number: 45
+        number: 10
     },
     {
         label: 'Years of experience',
         number: 3
     }
-];
+] as const;
