@@ -40,7 +40,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
                 <div className="flex items-center gap-3">
                     <a
                         href={profileLink}
-                        className="overflow-hidden rounded-full size-12"
+                        className="overflow-hidden shrink-0 rounded-full size-12"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -59,7 +59,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
                         >
                             {name}
                         </a>
-                        <p className="text-xs tracking-wider text-zinc-400">{role}</p>
+                        <p className="text-xs tracking-wider text-zinc-400 line-clamp-2">{role}</p>
                     </div>
                 </div>
 

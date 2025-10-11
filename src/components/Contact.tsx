@@ -131,7 +131,7 @@ export default function Contact() {
                             <textarea
                                 name="message"
                                 id="message"
-                                placeholder="Hi!"
+                                placeholder="Tell me about your project or idea..."
                                 required
                                 className="resize-y text-field min-h-32 max-h-80 reveal-up"
                                 onChange={handleChange}

@@ -1,9 +1,17 @@
 # 🚀 Bilal Benyoussef — Portfolio
 
+![Responsive](https://img.shields.io/badge/UI-Responsive-%2300C49A?style=flat-square&logo=tailwind-css&logoColor=white)
+
 This is my personal developer portfolio built with **React**, **TypeScript**, and modern frontend technologies.
 It showcases my skills, projects, and experience in a smooth, animated, and fully responsive design.
 
-![portfolio-banner](public/images/hero-banner.png)
+![portfolio-banner](./src/assets/images/hero-banner.png)
+
+## 🌐 Live Demo
+
+👉 [**Visit the Live Site**](https://your-portfolio-link.com)
+
+Explore the full experience of my portfolio, smooth animations, responsive design, and modern UI.
 
 ---
 
@@ -23,10 +31,12 @@ It showcases my skills, projects, and experience in a smooth, animated, and full
 
 ```
 my_portfolio/
-├─ public/
-│ └─ images/
 │
 ├─ src/
+│ ├─ assets/
+│ │ ├─ icons/
+│ │ └─ image/
+│ │
 │ ├─ components/
 │ │ ├─ About.tsx
 │ │ ├─ Contact.tsx
@@ -176,6 +186,16 @@ You’re free to use and adapt it for your own portfolio projects.
 
 **Bilal Benyoussef**
 
-- 💼 [LinkedIn](www.linkedin.com/in/bilal-ben-youssef-b38a27251)
+- 💼 [LinkedIn](https://linkedin.com/in/bilal-ben-youssef-b38a27251)
 - 🐙 [GitHub](https://github.com/Bilalben23)
 - ✉️ [bilalbeny735@gmail.com](mailto:bilalbeny735@gmail.com)
+
+---
+
+## 🖼️ Full Page Preview
+
+Here’s a full-page look at the portfolio:
+
+> 📸 _Screenshot of the complete landing page showcasing hero, about, work, and contact sections._
+
+![portfolio-full](./src/assets/images/portfolio-full.png)
