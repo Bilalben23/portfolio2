@@ -13,7 +13,8 @@ import mySQL from '../assets/icons/mysql.svg';
 import redis from '../assets/icons/redis.svg';
 import git from '../assets/icons/git.svg';
 import github from '../assets/icons/github.svg';
-import storybook from '../assets/icons/storybook.svg';
+import vitest from '../assets/icons/vitest.svg';
+import jira from '../assets/icons/jira.svg';
 
 
 export type skillItem = {
@@ -99,8 +100,13 @@ export const skillItems: skillItem[] = [
         desc: 'Hosts projects & manages code',
     },
     {
-        imgSrc: storybook,
-        label: 'Storybook',
-        desc: 'Develops and tests UI components',
+        imgSrc: vitest,
+        label: 'Vitest',
+        desc: 'Modern testing for Vite projects',
     },
+    {
+        imgSrc: jira,
+        label: 'Jira',
+        desc: 'Tracks tasks & manages projects',
+    }
 ] as const;

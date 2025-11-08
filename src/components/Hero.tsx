@@ -28,9 +28,11 @@ export default function Hero() {
                     <h1 className='max-w-max bg-linear-0 text-4xl font-semibold mt-5 mb-8 lg:mb-10 leading-tight lg:text-[50px] lg:leading-16 from-[#fafafa] to-[#a1a1aa] bg-clip-text text-transparent'>
                         A Full-Stack Developer building modern, fast, and scalable web apps.
                     </h1>
-                    <div className='flex items-center gap-3'>
+                    <div className='flex flex-wrap items-center gap-3'>
                         <ButtonPrimary
-                            label="Download CV"
+                            href="/files/resume.pdf"
+                            label="Download Resume"
+                            download="Bilal_Benyoussef_Resume.pdf"
                             icon="download"
                         />
 

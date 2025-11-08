@@ -55,10 +55,10 @@ export default function Work() {
                     }
                 </div>
                 {
-                    visibleCount < works.length && <div className="mt-6 flex justify-center">
+                    visibleCount < works.length && <div className="flex justify-center mt-6">
                         <button
                             type="button"
-                            className="btn btn-primary cursor-pointer"
+                            className="cursor-pointer btn btn-primary"
                             onClick={handleLoadMore}
                         >
                             Load More

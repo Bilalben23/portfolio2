@@ -1,28 +1,16 @@
 import { reviews } from '../constants/reviews';
 import ReviewCard from './ReviewCard';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from '@gsap/react';
-
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+import { Swiper, SwiperSlide } from 'swiper/react';
+// @ts-ignore
+import 'swiper/css';
+// @ts-ignore
+import 'swiper/css/free-mode';
+// @ts-ignore
+import 'swiper/css/pagination';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 
 export default function Review() {
-
-
-    useGSAP(() => {
-        gsap.to(".scrub-slide", {
-            scrollTrigger: {
-                trigger: ".scrub-slide",
-                scrub: true,
-                start: "0% 80%",
-                end: "400% 80%"
-            },
-            x: "-50"
-        })
-    })
-
-
     return (
         <section id='reviews' className='overflow-hidden section'>
             <div className='container mx-auto'>
@@ -31,16 +19,39 @@ export default function Review() {
                     Feedback from people who have seen my projects and work.
                 </p>
 
-                <div className='p-2 overflow-x-auto scrollbar-thin' >
-                    <div className='flex items-stretch gap-3 scrub-slide'>
+                <div className='p-2' >
+                    <Swiper
+                        freeMode={true}
+                        pagination={{
+
+                            clickable: true,
+                        }}
+                        modules={[FreeMode, Pagination, Autoplay]}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 30,
+                            },
+                        }}
+                    >
                         {
-                            reviews.map((review, idx) => <ReviewCard
-                                key={idx}
-                                {...review}
-                            />
-                            )
+                            reviews.map((review, idx) => <SwiperSlide key={idx} className="!flex !h-auto"
+                            >
+                                <ReviewCard
+                                    {...review}
+                                />
+                            </SwiperSlide>)
                         }
-                    </div>
+                    </Swiper>
                 </div>
             </div>
         </section>

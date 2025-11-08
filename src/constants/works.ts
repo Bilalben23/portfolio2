@@ -31,7 +31,7 @@ export const works: Work[] = [
             "Lenis",
             "Vite"
         ],
-        demoLink: "https://portfolio2-cyan-three.vercel.app",
+        demoLink: "https://bilalbenyoussef.vercel.app",
         githubLink: "https://github.com/Bilalben23/portfolio2",
         linkedinPost: "https://www.linkedin.com/posts/bilal-ben-youssef-b38a27251_react-typescript-frontenddevelopment-activity-7383104727787446272-MwUy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5EH5wBpdKQYFltPKE6szxOk4kejBcZ5M8"
     },

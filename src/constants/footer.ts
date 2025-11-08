@@ -41,12 +41,8 @@ export const socials: Social[] = [
         href: 'https://www.linkedin.com/in/bilal-ben-youssef-b38a27251'
     },
     {
-        label: 'Twitter X',
-        href: 'https://x.com/BenyBilal31567'
-    },
-    {
-        label: 'Instagram',
-        href: 'https://www.instagram.com/bial4220'
+        label: 'WhatsApp',
+        href: 'https://wa.me/212664897030?text=Hello%20Bilal%2C%20I%20saw%20your%20profile%20and%20would%20like%20to%20connect!'
     },
     {
         label: 'CodePen',

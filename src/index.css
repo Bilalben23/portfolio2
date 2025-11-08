@@ -86,7 +86,7 @@
     }
 
     .section {
-        @apply pt-20 lg:pt-32;
+        @apply px-4 pt-20 md:px-0 lg:pt-32;
     }
 
     .label {

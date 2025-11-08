@@ -17,7 +17,7 @@ const ReviewCard: FC<ReviewCardProps> = ({
     commentLink,
 }) => {
     return (
-        <div className="bg-zinc-800 p-5 flex-1 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col p-5 transition-shadow duration-300 shadow-lg bg-zinc-800 rounded-xl hover:shadow-xl">
 
             {/* Ratings */}
             <div className="flex items-center gap-1 mb-3">

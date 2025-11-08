@@ -3,17 +3,19 @@ import { memo, type FC } from "react";
 type BaseProps = {
     label?: string;
     icon?: string;
-    classes?: string;
+    classes?: string
 };
 
 type AnchorProps = BaseProps & {
     href: string;
     target?: "_self" | "_blank" | "_parent" | "_top";
+    download?: string | boolean;
 };
 
 type ButtonProps = BaseProps & {
     href?: undefined;
     target?: never;
+    download?: never;
 };
 
 type ButtonAllProps = (AnchorProps | ButtonProps) & {
@@ -27,17 +29,21 @@ const ButtonBase: FC<ButtonAllProps> = memo(({
     label,
     icon,
     variant = "primary",
-    classes = ""
+    classes = "",
+    download
+
 }) => {
     const baseClass = variant === "primary" ? "btn-primary" : "btn-outline";
 
     if (href) {
+
         return (
             <a
                 href={href}
                 target={target}
                 rel="noopener noreferrer"
                 className={`btn ${baseClass} ` + classes}
+                {...(download !== undefined ? { download } : {})}
             >
                 {label}
                 {icon && (
@@ -50,7 +56,10 @@ const ButtonBase: FC<ButtonAllProps> = memo(({
     }
 
     return (
-        <button type="button" className={`btn ${baseClass}` + classes}>
+        <button
+            type="button"
+            className={`btn ${baseClass}` + classes}
+        >
             {label}
             {icon && (
                 <span className="material-symbols-rounded" aria-hidden="true">
